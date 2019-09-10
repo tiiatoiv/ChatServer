@@ -1,4 +1,4 @@
-public class ChatHistory() {
+object ChatHistory {
 
     fun instert(message: ChatMessage){
 
