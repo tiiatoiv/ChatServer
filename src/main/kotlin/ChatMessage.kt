@@ -1,3 +1,3 @@
-public class ChatMessage(){
+public class ChatMessage(var message: String = ""){
 
 }
