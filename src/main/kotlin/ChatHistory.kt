@@ -1,10 +1,15 @@
 object ChatHistory {
+    val listOfChatMessages = mutableListOf<ChatMessage>()
 
-    fun instert(message: ChatMessage){
-
+    fun insert(message: ChatMessage){
+        listOfChatMessages.add(message)
     }
 
     override fun toString(): String {
-        return super.toString()
+        var chatHistory : String = ""
+        for (chatMessage in listOfChatMessages) {
+            chatHistory += (chatMessage.formattedTime) + (" ") + (chatMessage.message) + "\n"
+        }
+        return chatHistory
     }
 }
